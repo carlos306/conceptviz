@@ -1,6 +1,6 @@
 # ConceptViz 🧠
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/carlos306/conceptviz)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://conceptviz-zsyrpn4t4avfrmvrq6u2hf.streamlit.app/)
 
 **ConceptViz** is an educational tool that helps visualize complex concepts using Generative AI. It combines:
 - **Google Gemini** for clear, didactic text explanations.
