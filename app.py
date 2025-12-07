@@ -92,6 +92,7 @@ def get_visualization_code(concept, error_context=None):
     6. Asegúrate de manejar etiquetas, títulos y leyendas para que la gráfica sea educativa.
     7. IMPORTANTE: La app puede estar en modo CLARO u OSCURO. Por favor:
        - Usa `fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)')` para fondo transparente.
+       - Configura `height=700` en update_layout para que la gráfica se vea grande y clára.
        - Asegúrate que el texto y las líneas sean legibles en ambos fondos (o usa colores vibrantes).
     8. No incluyas bloques markdown (```python ... ```). Devuelve SOLAMENTE el código puro.
     
@@ -101,7 +102,13 @@ def get_visualization_code(concept, error_context=None):
     x = np.linspace(0, 10, 100)
     y = np.sin(x)
     fig = go.Figure(data=go.Scatter(x=x, y=y))
-    fig.update_layout(title='Seno de x', paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)')
+    fig.update_layout(
+        title='Seno de x',
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
+        height=700,
+        margin=dict(t=50, l=50, r=50, b=50)
+    )
     """
 
     if error_context:
